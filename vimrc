@@ -27,6 +27,15 @@ autocmd QuickFixCmdPost vimgrep cwindow
 nnoremap <C-k> :bprevious<CR>
 nnoremap <C-j> :bnext<CR>
 
+" Auto completion of braces
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<Left>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+" Erase whitespace
+nnoremap :ws :%s/ *$//g
+
 " Open terminal
 nnoremap :sh :terminal<CR>
 
