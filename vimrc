@@ -8,6 +8,7 @@ Plug 'cocopon/iceberg.vim'             " Cool colorscheme
 Plug 'vim-airline/vim-airline'         " Cool statusbar
 Plug 'elmcast/elm-vim'                 " Elm support
 Plug 'majutsushi/tagbar'               " Program structure outliner
+Plug 'herringtondarkholme/yats.vim'    " Typescript syntax highlight
 
 call plug#end()
 
