@@ -1,0 +1,46 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "tags": true
+    },
+
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "tags": true
+    },
+
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    "vim.visualstar": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "on",
+
+    "vim.insertModeKeyBindings": [
+      {"before": [";", ";"],             "commands": ["editor.action.triggerSuggest"]},
+      {"before": ["j", "j"],             "after": ["<Esc>"]}
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {"before": ["u"],                  "commands": [{"command": "undo"}]},
+      {"before": ["<C-r>"],              "commands": [{"command": "redo"}]},
+      {"before": ["<Leader>", "c"],      "commands": [{"command": "editor.action.commentLine"}]},
+      {"before": ["<Leader>", "x"],      "commands": [{"command": "editor.action.formatDocument"}]},
+      {"before": ["j"],                  "after": ["g", "j"]},
+      {"before": ["k"],                  "after": ["g", "k"]},
+    ]
+
+}

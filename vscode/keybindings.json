@@ -1,0 +1,136 @@
+// Place your key bindings in this file to override the defaults
+// 主にこちらを参照: https://qiita.com/koutasan/items/06d34c279ca06c977884
+[
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.quickOpen",
+        "when": "vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "list.focusUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "list.focusDown",
+        "when": "terminalFocus"
+    },
+    // サジェスチョン操作
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+
+    //コマンドパレットの移動
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen ",
+    },
+    //サイドバー表示(toggle)
+    {
+        "key": "ctrl+Space ctrl+Space",
+        "command":"workbench.action.toggleSidebarVisibility",
+        "when": "vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+Space ctrl+Space",
+        "command": "workbench.action.toggleSidebarVisibility",
+        //"when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+        "when": "vim.mode != 'Insert'"
+    },
+    // サイドバーからの移動 
+    {
+        "key": "ctrl+l",
+        "command":"workbench.action.focusFirstEditorGroup",
+        "when": "explorerViewletVisible && explorerViewletFocus && !editorFocus && !inQuickOpen"
+    },
+    /* -------------------------------- explorer -------------------------------- */
+    //explorer表示
+    {
+        "key": "ctrl+space ctrl+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+space e",
+        "command": "workbench.view.explorer"
+    },
+    //エクスプローラー間移動
+    {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //新規ファイル作成
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //新規フォルダ作成
+    {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //リネーム
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //削除
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+
+    /* ----------------------------- grep検索(sidebar) ---------------------------- */
+    {
+        "key": "ctrl+space ctrl+s",
+        "command": "workbench.action.findInFiles",
+        "when": "!searchInputBoxFocus"
+    },
+    {
+        "key": "enter",
+        "command": "search.action.focusSearchList",
+        "when": "searchViewletFocus && searchViewletVisible && inputFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "backspace",
+        "when": "searchViewletFocus && searchViewletVisible && searchInputBoxFocus"
+    },
+
+    //パネルから戻る
+    {
+        "key": "ctrl+space ctrl+k",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when":"panelFocus && !editorTextFocus && !editorHasSelection && !editorHasMultipleSelections && !inQuickOpen"
+    },
+    //パネルを出す
+    {
+        "key": "ctrl+space ctrl+t",
+        "command": "workbench.action.togglePanel",
+        "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+
+]
