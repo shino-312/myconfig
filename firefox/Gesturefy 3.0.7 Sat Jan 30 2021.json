@@ -1,0 +1,168 @@
+{
+  "Gestures": [
+    {
+      "pattern": [
+        [
+          12,
+          334
+        ]
+      ],
+      "command": {
+        "name": "OpenLinkInNewTab",
+        "settings": {
+          "position": "default",
+          "focus": false,
+          "emptyTab": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          26,
+          328
+        ],
+        [
+          12,
+          -359
+        ]
+      ],
+      "command": {
+        "name": "OpenLinkInNewTab",
+        "settings": {
+          "position": "default",
+          "focus": true,
+          "emptyTab": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -322,
+          5
+        ]
+      ],
+      "command": {
+        "name": "PageBack"
+      }
+    },
+    {
+      "pattern": [
+        [
+          168,
+          -1
+        ],
+        [
+          200,
+          -6
+        ]
+      ],
+      "command": {
+        "name": "PageForth"
+      }
+    },
+    {
+      "pattern": [
+        [
+          -136,
+          23
+        ],
+        [
+          -81,
+          15
+        ],
+        [
+          -125,
+          -2
+        ],
+        [
+          -10,
+          3
+        ],
+        [
+          330,
+          24
+        ],
+        [
+          32,
+          15
+        ],
+        [
+          -6,
+          10
+        ],
+        [
+          -185,
+          14
+        ],
+        [
+          -173,
+          -16
+        ]
+      ],
+      "command": {
+        "name": "CloseOtherTabs"
+      }
+    },
+    {
+      "pattern": [
+        [
+          14,
+          301
+        ],
+        [
+          -3,
+          10
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          239,
+          -7
+        ]
+      ],
+      "command": {
+        "name": "FocusRightTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          18,
+          324
+        ],
+        [
+          -22,
+          5
+        ],
+        [
+          -221,
+          -15
+        ]
+      ],
+      "command": {
+        "name": "FocusLeftTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    }
+  ],
+  "Settings": {
+    "Gesture": {
+      "Trace": {
+        "Style": {
+          "strokeStyle": "#ffcd0fcc"
+        }
+      }
+    }
+  }
+}
