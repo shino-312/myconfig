@@ -154,6 +154,21 @@
           "excludeDiscarded": false
         }
       }
+    },
+    {
+      "pattern": [
+        [
+          13,
+          -410
+        ]
+      ],
+      "command": {
+        "name": "CloseTab",
+        "settings": {
+          "nextFocus": "default",
+          "closePinned": true
+        }
+      }
     }
   ],
   "Settings": {
