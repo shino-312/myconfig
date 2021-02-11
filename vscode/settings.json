@@ -19,8 +19,8 @@
       "tags": true
     },
 
-    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
-    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "vscode-icons",
     "vim.visualstar": true,
     "vim.hlsearch": true,
     "vim.leader": "<space>",
