@@ -43,7 +43,8 @@
       {"before": ["j"],                  "after": ["g", "j"]},
       {"before": ["k"],                  "after": ["g", "k"]},
     ],
-    "markdown-pdf.plantumlServer": "",
-    "markdown-pdf.mermaidServer": ""
-
+    "vsicons.dontShowNewVersionMessage": true,
+    "plantuml.render": "PlantUMLServer",
+    "plantuml.server": "http://localhost:12345/plantuml",
+    "plantuml.commandArgs": []
 }

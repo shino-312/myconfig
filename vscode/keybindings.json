@@ -136,5 +136,10 @@
         "command": "workbench.action.togglePanel",
         "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
     },
+    {
+        "key": "ctrl+shift+v",
+        "command": "markdown-preview-enhanced.openPreview",
+        "when": "!terminalFocus"
+    },
 
 ]
